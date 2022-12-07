@@ -1,0 +1,11 @@
+let x = presente(100, 90)
+
+function presente (dinheiro, valor) {
+    if (dinheiro < valor) {
+        return "Não vai dar para comprar..."
+    } else {
+        return "Você realmente precisa gazer essa compra?"
+    }
+}
+
+console.log(x)

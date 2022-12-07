@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DOM </title>
+    <style>
+        body {
+            background-color: rgb(12, 112, 242);
+            color: white;
+        }
+
+        div {
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body id="principal">
+    <div>
+        <H1> Aprendendo DOM </H1>
+        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, mollitia molestiae quod corrupti
+            consectetur
+            quaerat, vitae maxime enim, provident voluptatum non? Quibusdam praesentium iste similique eius, natus nam
+            fuga ab.</p>
+            <button> Clique Aqui! </button>
+            <button> Clique Aqui 2! </button>
+        </div>
+    <script>
+        // window.document.write('Minha primeira manupulação DOM')
+        // window.alert('Oi!')
+        var x = window.document.getElementById('principal')
+        x.style.background = 'black'
+
+        var y = window.document.getElementsByTagName('button')[1]
+        y.innerHTML = 'Caio'
+
+
+    </script>
+
+
+</body>
+
+</html>
